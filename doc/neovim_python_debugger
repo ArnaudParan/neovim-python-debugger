@@ -1,0 +1,15 @@
+*neovim_python_debugger.txt* a plugin for python debugging in neovim
+
+Neovim Python Debugger
+
+================================================================
+
+CONTENTS                                           *pydebug-contents*
+
+1. Introduction ......................... |pydebug-intro|
+
+Author: Arnaud Paran <paran.arnaud@gmail.com>
+
+================================================================
+
+INTRODUCTION                                       *pydebug-intro*
