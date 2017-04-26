@@ -16,3 +16,7 @@ class Main(object):
 
     def __init__(self, vim):
         self.vim = vim
+
+    @neovim.command('PydebugPing', sync=True)
+    def test_command(self):
+        self.vim.command('echo "It works!"')

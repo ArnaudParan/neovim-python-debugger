@@ -2,10 +2,16 @@
 """
 Tests the __init__ of the package
 """
-import neovim_python_debugger
 
-def tests_construct(mocker):
-    vim = mocker.MagicMock()
-    plugin = neovim_python_debugger.Main(vim)
+
+def tests_construct(pydebug):
+    vim, plugin = pydebug
 
     assert plugin.vim == vim
+
+
+def test_test_command(pydebug):
+    vim, plugin = pydebug
+    plugin.test_command()
+
+    vim.command.assert_called_once_with('echo "It works!"')
